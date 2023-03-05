@@ -4,8 +4,8 @@ import 'package:flutter_application_1/presentation/pages/wrapper_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  // SystemChrome.setPreferredOrientations(
+  //     [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(
       MaterialApp(debugShowCheckedModeBanner: false, home: const MyWidget()));
 }
