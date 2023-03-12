@@ -46,23 +46,23 @@ class GridViewWidget extends StatelessWidget {
       }
       return InkWell(
         onTap: () {},
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(10.0),
-          child: Container(
-            color: Colors.transparent,
-            child: Column(children: [
-              Image.asset(
+        child: Container(
+          color: Colors.transparent,
+          child: Column(children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10.0),
+              child: Image.asset(
                 p,
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 100,
               ),
-              Text(
-                n,
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-            ]),
-          ),
+            ),
+            Text(
+              n,
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            ),
+          ]),
         ),
       );
     }
